@@ -2,30 +2,86 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Chatbot Studeria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studeria – Chatbot IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f2f4f8;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
-      background-color: #1a1a40;
-      color: white;
-      padding: 1rem 2rem;
-      font-size: 1.5rem;
+      background-color: white;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #7D3EF6;
+      margin-top: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-top: 0.2rem;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
     }
 
     iframe {
-      width: 100vw;
-      height: calc(100vh - 60px);
+      width: 100%;
+      max-width: 800px;
+      height: 80vh;
       border: none;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      background-color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <header>🤖 Chatbot Studeria</header>
-  <iframe src="https://automation.ladinguerie.fr/webhook/66e16a1e-342e-4358-9d74-18e37b0664a3/chat"></iframe>
+  <header>
+    <img src="https://i.ibb.co/MBpFZqj/logo-studeria.png" alt="Logo Studeria" width="80" height="80" />
+    <div class="logo-text">STUDERIA</div>
+    <div class="subtitle">Work with AI</div>
+  </header>
+
+  <main>
+    <iframe src="https://automation.ladinguerie.fr/webhook/66e16a1e-342e-4358-9d74-18e37b0664a3/chat"></iframe>  </main>
+
+  <footer>
+    © 2025 Studeria. Tous droits réservés.
+  </footer>
 </body>
 </html>
